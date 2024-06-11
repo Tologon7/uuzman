@@ -1,0 +1,106 @@
+/* Общие стили для всего экрана */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #FFF; /* Белый цвет фона */
+  color: #333; /* Темно-серый цвет текста */
+  margin: 0; /* Убираем внешние отступы */
+}
+
+/* Стили для формы */
+form {
+  max-width: 400px;
+  margin: 40px auto;
+  background-color: #EEE; /* Светло-серый цвет фона формы */
+  padding: 20px; /* Внутренний отступ формы */
+  border-radius: 8px; /* Закругленные углы формы */
+}
+
+/* Стили для полей формы */
+label {
+  display: block;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+  border: 1px solid #CCC; /* Легкий бордюр вокруг полей ввода */
+  border-radius: 4px; /* Закругленные углы полей ввода */
+  background-color: #FFF; /* Белый цвет фона полей ввода */
+  color: #333;
+}
+
+/* Стили для кнопки */
+button {
+  background-color: grey; /* Темно-серый цвет фона кнопки */
+  color: #FFF; /* Белый цвет текста кнопки */
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #555; /* Темно-серый при наведении на кнопку */
+}
+
+/* Стили для области отображения ошибок */
+.form-error {
+  color: #FF0000;
+  margin-bottom: 15px;
+}
+
+/* Стили для списка статей */
+.list-articles {
+  list-style: none;
+  padding: 0;
+}
+
+.list-articles li {
+  margin-bottom: 20px;
+}
+
+/* Стили для панели статьи */
+.article-panel {
+  display: flex;
+  justify-content: space-between;
+}
+
+.article-panel p {
+  margin: 0;
+}
+
+/* Стили для заголовка статьи */
+h2 {
+  color: #333;
+}
+
+/* Стили для изображения в статье */
+.img-article-left thumb {
+  float: left;
+  margin-right: 5px;
+}
+
+/* Стили для цены и количества в статье */
+h4 {
+  margin: 10px 0;
+}
+
+/* Стили для ссылки "Читать пост" */
+.link-read-post a {
+  color: grey;
+  text-decoration: none;
+}
+
+.link-read-post a:hover {
+  text-decoration: underline;
+}
+
+
+.icon{
+    width: 50px;
+    height: 50px;
+}

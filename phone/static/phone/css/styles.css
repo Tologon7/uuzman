@@ -1,0 +1,155 @@
+/* styles.css */
+
+/* Общие стили */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Шапка страницы */
+.header {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+}
+
+.header h1 {
+    margin: 0;
+}
+
+h1 {
+    color: red;
+}
+
+hr {
+    border: 0;
+    height: 0.1px;
+    background: rgba(0, 0, 0, 0.1);
+    background: #ccc;
+    margin: 10px 0;
+}
+
+/* Главное меню */
+#mainmenu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.icon{
+    width: 50px;
+    height: 50px;
+}
+
+#mainmenu li {
+    display: inline;
+    margin-right: 10px;
+}
+
+#mainmenu li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Сайдбар слева */
+.left-chapters {
+    width: 20%;
+    background-color: #f2f2f2;
+    padding: 10px;
+    height: 100vh;
+    overflow-y: auto;
+}
+
+.left-chapters ul {
+    list-style-type: none;
+    padding: 2;
+}
+
+.left-chapters li {
+    margin-bottom: 6px;
+}
+
+.left-chapters li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.left-chapters li.selected {
+    font-weight: bold;
+    color: red;
+}
+
+/* Блок контента */
+.content {
+    flex-grow: 1;
+    padding: 10px;
+    height: 100vh;
+    overflow-y: auto;
+}
+
+.content-text {
+    line-height: 1.6;
+}
+
+/* Навигация по страницам */
+.list-pages {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.list-pages ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+}
+
+.list-pages li {
+    margin-right: 5px;
+    padding: 5px 10px;
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+}
+
+.list-pages li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.list-pages li.page-num-selected {
+    font-weight: bold;
+    color: red;
+    background-color: #333;
+    color: white;
+}
+
+.list-pages li a:hover {
+    background-color: #ddd;
+}
+
+/* Footer */
+#footer {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+#footer p {
+    margin: 0;
+}
+
+#footer a {
+    color: white;
+    text-decoration: none;
+}
+
+#footer a:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,15 @@
+{% extends 'phone/base.html' %}
+
+{% block content %}
+<h1>{{post.title}}</h1>
+
+{% if post.photo %}
+<p><img class="img-article-left" src="{{post.photo.url}}"></p>
+{% endif %}
+
+
+<p><b>{{p.description}}</b></p>
+<h4>Количество: {{p.quantity}}ш.</h4>
+<h4>Цена: <b>{{p.price}}$</b></h4>
+
+{% endblock %}
