@@ -27,7 +27,7 @@ class Phone(models.Model):
     price = models.FloatField(verbose_name='Цена (с)')
     quantity = models.IntegerField(verbose_name='Количество', default=1)
     size = models.ForeignKey('Size', on_delete=models.PROTECT, verbose_name='Размер')
-    tel = models.IntegerField(verbose_name='Номер телефона', default=996700909915, max_length=12, blank=True, null=True)
+    tel = models.IntegerField(verbose_name='Номер телефона', default=996700909915, blank=True, null=True)
     time_create = models.DateTimeField(auto_now_add=True)
     time_update = models.DateTimeField(auto_now=True)
     is_published = models.BooleanField(default=False, verbose_name='Опубликовать')
